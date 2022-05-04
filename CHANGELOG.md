@@ -1,5 +1,9 @@
 # Changes
 
+## Version 1.0.5
+
+- fix additional github links in package.json
+
 ## Version 1.0.4
 
 - fix github link in package.json
