@@ -1,5 +1,9 @@
 # Changes
 
+## Version 1.0.3
+
+- Add missing cheerio dependency
+
 ## Version 1.0.2
 
 - Fix issue where `<a>` tags without the `href` attribute were extracted as `undefined`
