@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tcort/html-link-extrator.git"
+    "url": "git+https://github.com/tcort/html-link-extractor.git"
   },
   "keywords": [
     "html",
