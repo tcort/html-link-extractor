@@ -25,9 +25,11 @@ function htmlLinkExtractor(html) {
 
     ].forEach(({ tagName, attr }) => {
         $(tagName).each((i, node) => {
-            links.push(
-                $(node).attr(attr)
-            );
+            if ($(node).attr(attr)) {
+                links.push(
+                    $(node).attr(attr)
+                );
+            }
         });
     });
 

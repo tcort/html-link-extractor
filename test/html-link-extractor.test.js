@@ -12,4 +12,8 @@ describe('html-link-extractor', function () {
     it('should extract image links', function () {
         expect(htmlLinkExtractor('<div><img src="foo.jpg" alt="foo"/></div>')).to.eql([ 'foo.jpg' ]);
     });
+
+    it('should ignore links that are empty e.g. <a id="foo">foo</a>', function () {
+        expect(htmlLinkExtractor('<p><a id="foo">foo</a></p>')).to.eql([ ]);
+    });
 });
