@@ -1,6 +1,6 @@
 {
   "name": "html-link-extractor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "extracts links from html text",
   "main": "index.js",
   "scripts": {
