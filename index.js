@@ -23,7 +23,13 @@ function htmlLinkExtractor(html) {
         { tagName: 'track', attr: 'src' },
         { tagName: 'video', attr: 'src' },
 
-    ].forEach(({ tagName, attr }) => $(`${tagName}[${attr}]`).contents().each((i, node) => links.push(node.parent.attribs[attr])));
+    ].forEach(({ tagName, attr }) => {
+        $(tagName).each((i, node) => {
+            links.push(
+                $(node).attr(attr)
+            );
+        });
+    });
 
     return links;
 }
